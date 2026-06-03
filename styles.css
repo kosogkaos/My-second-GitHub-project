@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background-color: #f5f5f5;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f7f7f4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,28 +24,58 @@ body {
 }
 
 .card {
-    background-color: #ff916f;
-    border-radius: 2px;
-    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    min-height: 380px;
+    background-color: #f2f1ed;
+    border-radius: 4%;
+    padding: 16px 32px;
     width: 320px;
     flex-shrink: 0;
 }
 
+.card-top {
+    flex: 1;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 28px;
+    color: #26251e;
+}
+
 .card-title {
-    font-size: 32px;
-    font-weight: 600;
-    color: #333;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #26251e;
     margin-bottom: 8px;
 }
 
 .card-price {
     font-size: 20px;
-    color: #666;
     margin-bottom: 24px;
+    color: rgba(38, 37, 30, 0.4);
+    display: inline-flex;
+    align-items: baseline;
+}
+
+.card-price-amount {
+    font-size: 22px;
+    line-height: 40px;
+    font-weight: 400;
+    color: rgba(38, 37, 30, 0.4);
+}
+
+.card-price-period {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgba(38, 37, 30, 0.4);
 }
 
 .card-content {
-    margin-bottom: 32px;
+    margin-bottom: 0;
 }
 
 .includes-text {
@@ -76,6 +106,8 @@ body {
 
 .download-button {
     width: fit-content;
+    flex-shrink: 0;
+    margin-top: auto;
     background-color: #e6e5e0;
     border: none;
     border-radius: 999px;
